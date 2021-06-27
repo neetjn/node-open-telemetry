@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "indent": [true, "spaces", 2],
+    "curly": [true, "as-needed"],
+    "semicolon": [true, "always"],
+    "no-empty": true,
+    "prefer-const": true,
+    "prefer-template": [true, "allow-single-concat"],
+    "quotemark": [true, "single", "jsx-double"],
+    "space-before-function-paren": true,
+    "triple-equals": true
+  }
+}
