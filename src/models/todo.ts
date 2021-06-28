@@ -1,4 +1,4 @@
-import { IApiRootDto } from './apiroot'
+import { IApiRootDto } from './apiroot';
 
 export interface ITodo {
   id: number;
