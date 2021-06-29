@@ -11,6 +11,6 @@ class QuickstartLoad(HttpUser):
   @task(3)
   def view_todo_items(self):
     for item_id in range(10):
-      self.client.get(f'/todo/{item_id}', name'=/todo')
+      self.client.get(f'/todo/{item_id}')
       time.sleep(1)
 

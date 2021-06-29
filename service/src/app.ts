@@ -7,7 +7,7 @@ import TodoController, { Routes as TodoRoutes } from './controllers/todo';
 const express = require('express');
 
 const app: Application = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.use(ApiRootRoutes.Base, ApiRootController);
 app.use(TodoRoutes.Base, TodoController);

@@ -7,6 +7,13 @@
     "start": "npx ts-node-dev src/app.ts"
   },
   "dependencies": {
+    "@opentelemetry/core": "^0.22.0",
+    "@opentelemetry/exporter-zipkin": "^0.22.0",
+    "@opentelemetry/instrumentation-express": "^0.22.0",
+    "@opentelemetry/instrumentation-grpc": "^0.22.0",
+    "@opentelemetry/instrumentation-http": "^0.22.0",
+    "@opentelemetry/node": "^0.22.0",
+    "@opentelemetry/tracing": "^0.22.0",
     "@types/express": "^4.17.12",
     "@types/jest": "^26.0.23",
     "cross-env": "^7.0.3",

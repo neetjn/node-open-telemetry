@@ -5,7 +5,7 @@ The REST API being traced was forked from [neetjn/ts-express-template](https://g
 I'm leveraging [opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js) which uses the open telemtry protocol (OTLP) to report service tracing, metrics, and logs to supported services.
 In this project I'll be exporting traces to [Zipkin](https://zipkin.io/), an open source tracing backend.
 
-I've wired up the express starter with open telemetry, and using docker-compose I've orchestrated dependant services and linked their networks for communication.
+I've wired up the express starter with open telemetry, and using Docker I've orchestrated dependant services.
 To access the Zipkin to view tracing, use `http://localhost:9411`.
 
 The docker container built with this repository will preheat the tracing backend with an artificial load constructed using [locust](https://locust.io/).
