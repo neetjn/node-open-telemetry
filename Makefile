@@ -20,8 +20,10 @@ clean:
 stage:
 	@echo "Starting up zipkin service"
 	${DOCKER_COMMAND} run --rm -d -p 9411:9411 --name ${ZIPKIN_CONTAINER} ${ZIPKIN_IMAGE}
+	sleep 5
 	@echo "Spinning up demo service api"
 	${DOCKER_COMMAND} run --rm -d -p 4000:4000 --name ${SERVICE_CONTAINER_NAME} ${SERVICE_IMAGE_NAME}
+	sleep 5
 	@echo "Starting artificial load"
 	${DOCKER_COMMAND} run --rm -d -p 8089:8089 --name ${LOCUST_CONTAINER_NAME} ${LOCUST_IMAGE_NAME}
 

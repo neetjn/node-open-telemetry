@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 import { Application } from 'express';
+import * as Tracing from './tracing';
 import ApiRootController, { Routes as ApiRootRoutes } from './controllers/apiroot';
 import TodoController, { Routes as TodoRoutes } from './controllers/todo';
 
